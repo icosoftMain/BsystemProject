@@ -1,0 +1,11 @@
+@keyframes moveIntop {
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    50%{transform: translateY(2rem);}
+    100%{
+        opacity: 0;
+        transform: translate(0);
+    }
+}

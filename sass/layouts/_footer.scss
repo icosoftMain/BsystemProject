@@ -1,0 +1,136 @@
+.footer{
+ 
+ width: 100%;
+background-color: rgb(209, 209, 209); 
+
+//  background-image:linear-gradient(145deg, 
+//  transparent 0%,
+//  transparent 89%,
+//  rgb(0, 0, 0) 70%),
+//   url('../images/fruit.webp');
+//   background-size: cover;
+//  background-position: center;
+
+ &__contianer{
+     width: 100%;
+     padding: 2rem;
+     height: inherit;
+
+ }
+
+ &__copyright{
+     text-align: center;
+     font-size: 1.4rem;
+     color: black;
+   padding: 1rem 3rem;
+ }
+
+
+ &__form{
+     width: 100%;
+     &--group{
+     padding: .2rem;
+    }
+    &--input{
+        font-size: 1.5rem;
+        font-family: inherit;
+        padding: 1.2rem 1rem;
+        width: 80%;
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all.3s;
+        border-radius: 2px;
+
+        
+        
+    &:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        border-bottom: 3px solid $btn-color-display;
+    }
+    &:focus:invalid{
+        border-bottom: 3px solid $btn-color;
+    }
+    &::-webkit-input-placeholder{
+        color: $paragraph-color;
+    }
+    }
+
+    &--label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: .5rem;
+        display: block;
+        text-transform: capitalize;
+        transition: all .3s;
+    }
+&--input:placeholder-shown + &--label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+ }
+&-addrass{
+    padding: .5rem;
+    list-style: none;
+    &-item{
+        
+        color: black;
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        
+    }
+    &-icon{
+        
+        font-size: 1.4rem;
+        @include respond(tab-port){
+            font-size: 1.6rem;
+        }
+    }
+}
+
+&__list-social{
+    list-style: none;
+}
+&__item-social{
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    
+    &:not(:last-child){
+        margin-right: 2rem;
+    }
+}
+&__link-social{
+    color: black;
+    &:hover{
+        color: $btn-color;
+    }
+}
+
+&__list-nav{
+    list-style: none;
+}
+&__item-nav{
+    display: block;
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+&__link-nav{
+    color: $paragraph-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    @include respond(tab-port){
+        font-size: 1.7rem;
+    }
+}
+}
+
+

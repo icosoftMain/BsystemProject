@@ -1,0 +1,41 @@
+.slidertwo{
+    border-bottom: 1px solid $paragraph-color;
+    
+}
+
+.news{
+    
+    &__box{
+        margin-left: 2rem;
+       
+    }
+    &__shape{
+        float: left;
+        height: 5rem;
+        width: 4rem;
+        margin-top: -.5rem;
+     background-color: $paragraph-color;
+     position: relative;
+    }
+}
+.caption-one{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    color: $btn-color;
+}
+.caption-two{
+    border-top: 2px solid $color-white;
+    background-color: $btn-color;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    text-align: center;
+    color: $color-white;
+    font-size: 1.6rem;
+}

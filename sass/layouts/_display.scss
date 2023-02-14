@@ -1,0 +1,80 @@
+.display{
+    &__continer{
+        height: 110vh;
+    width: 100;
+    background-image:linear-gradient(to right bottom ,
+    rgba(0, 0, 0, 0.9),
+     rgba(0, 0, 0, 0.295)),
+     url('../images/f1.jpg');
+
+   background-position: bottom;
+   background-size: cover;
+
+   position: relative;
+
+   @include respond(phone){
+    height: 90vh;
+   }
+    }
+    &__slider-box{
+    width: 50%;
+    padding: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    @include respond(phone){
+        width: 70% !important;
+       
+    }
+    }
+
+    &__prev{
+        position: absolute;
+            top: 50%;
+            left: 4%;
+            padding: 1rem 2rem;
+            background-color: rgba(240, 238, 238, 0.856);
+            font-size: 30px;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: $btn-color;
+            }
+            @include respond(phone){
+                font-size: 20px;
+                padding: .3rem 1rem;
+            }
+    }
+    &__next{
+        position: absolute;
+    top: 50%;
+    right: 4%;
+    padding:1rem 2rem;
+    background-color: rgba(240, 238, 238, 0.856);
+    font-size: 30px;
+    cursor: pointer;
+
+    @include respond(phone){
+        font-size: 20px;
+        padding: .3rem 1rem;
+    }
+
+    &:hover{
+
+        color: white;
+        background-color: $btn-color;
+    }
+
+
+
+    }
+}
+
+
+
+.sticky {
+    margin-top: 0 !important; 
+}
+.hid{
+    display: none;
+}

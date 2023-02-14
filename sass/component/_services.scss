@@ -1,0 +1,20 @@
+.services{
+//  background-color: black;
+padding-bottom: 3rem;
+    &__shape{
+        float: left;
+        font-size: 5rem;
+        margin-right:1rem;
+        height: 15rem;
+        
+      
+    }
+    &__text{
+     padding-left: 2rem;   
+// background-color: black;
+    
+    }
+    &__icon{
+        margin-top: -2rem;
+    }
+}
